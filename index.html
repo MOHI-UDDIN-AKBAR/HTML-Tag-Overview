@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Arafat" />
+    <meta name="description" content="Learn basics of HTML language" />
+    <meta name="robots" content="index, follow" />
+    <title>Basic of html</title>
+    <style type="text/css">
+      body {
+        background-color: #1f2633;
+        color: white;
+        scroll-behavior: smooth;
+      }
+      section {
+        margin: 30px 0px;
+      }
+      footer {
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Work</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h1>Basics of HTML Tags</h1>
+        <p>
+          HTML Elements are what make up HTML in general. This is a list of the
+          main Html element tags. (There are more not included in this list.)
+        </p>
+        <br />
+      </section>
+      <article>
+        <h2>Examples of HTML Tags</h2>
+        <section id="sectionOne">
+          <div>
+            <b>This tag make text bold</b>
+            <strong>This tag make text bold</strong>
+          </div>
+          <div>
+            <i>This tag make text italic format</i>
+            <emp>This tag make text italic format</emp>
+          </div>
+          <u>This tag add a underline below the text</u>
+          <p>
+            (a+b)
+            <sup>2</sup
+            >&nbsp;=&nbsp;a<sup>2</sup>&nbsp;+&nbsp;2ab&nbsp;+&nbsp;b<sup
+              >2</sup
+            >
+          </p>
+          <p>H<sub>2</sub>O</p>
+          <div>
+            <strike>THis tag add line over the text</strike>
+            <br />
+            <del>THis tag add line over the text</del>
+          </div>
+          <br />
+          <mark>This tag is used to mark the text</mark>
+          <br />
+        </section>
+        <section>
+          <h3>Example of HTML Lists</h3>
+          <p>there are three kind of lists</p>
+          <div>
+            <span>Ordered list</span>
+            <ol type="1">
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+            </ol>
+            <ol start="4">
+              <li>four</li>
+              <li>five</li>
+            </ol>
+          </div>
+          <div>
+            <span>Unordered list</span>
+            <ul type="square">
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+            </ul>
+            <ul>
+              <li>four</li>
+              <li>five</li>
+            </ul>
+          </div>
+          <div>
+            <dl>
+              <dt>Definition list</dt>
+              <dd>This is the title of Definition list</dd>
+            </dl>
+          </div>
+        </section>
+        <section>
+          <img src="picture.webp" alt="Beautiful picture of car" width="200" />
+          <br />
+          <a href="#sectionOne">Go to the section One</a>
+          <a href="mailto:abc@gmail.com">Mail</a>
+          <a href="tel:+12345678">call</a>
+          <a href="sms:+12345678">Message</a>
+          <br />
+        </section>
+        <section>
+          <table
+            cellpadding="10"
+            border="2"
+            cellspacing="10"
+            height="250"
+            width="250"
+          >
+            <caption>
+              Example of Table tag
+              <colgroup>
+                <col span="2" style="color: red" />
+                <col span="2" style="color: blue" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Roll</th>
+                  <th>GPA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Arafat</td>
+                  <td>101</td>
+                  <td>3.3</td>
+                </tr>
+                <tr>
+                  <td>Rifat</td>
+                  <td>102</td>
+                  <td>3.5</td>
+                </tr>
+                <tr>
+                  <td>Samir</td>
+                  <td>101</td>
+                  <td>4.0</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3" style="text-align: center">
+                    Everyone passed
+                  </td>
+                </tr>
+              </tfoot>
+            </caption>
+          </table>
+        </section>
+        <section>
+          <h3>Example of an form</h3>
+          <form>
+            <fieldset>
+              <legend>personal information</legend>
+
+              <div>
+                <label for="name">Name :</label>
+                <input type="text" id="name" required />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+              </div>
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required />
+              </div>
+              <div>
+                <h4>Gender:</h4>
+                <div>
+                  <input type="radio" value="male" id="male" checked />
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <input type="radio" value="female" id="female" />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div>
+                <h4>Plan:</h4>
+                <div>
+                  <input type="checkbox" value="A" id="A" checked />
+                  <label for="A">A</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="B" id="B" />
+                  <label for="B">B</label>
+                </div>
+              </div>
+              <div>
+                <label for="department"> Department </label>
+                <select name="department" id="department">
+                  <optgroup label="Car">
+                    <option value="BMW">BMW</option>
+                    <option value="AUDI">AUDI</option>
+                  </optgroup>
+                  <optgroup label="Book">
+                    <option value="BMW">Rich dad</option>
+                    <option value="AUDI">Poor dad</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="passage">Passage</label>
+                <textarea
+                  name="passage"
+                  id="passage"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div>
+                <datalist id="list">
+                  <option value="a">arafat</option>
+                  <option value="b">rifat</option>
+                  <option value="c">samir</option>
+                </datalist>
+                <input type="text" list="list" />
+              </div>
+
+              <input type="submit" value="submit" />
+              <input type="reset" value="reset" />
+            </fieldset>
+          </form>
+        </section>
+      </article>
+      <article>
+        <h2>Example of audio and video HTML tags</h2>
+        <section>
+          <audio controls>
+            <source src="audio.mp3" type="audio/mp3" />
+          </audio>
+        </section>
+        <section>
+          <video controls width="200" height="200">
+            <source src="video.webm" type="video/webm" />
+          </video>
+        </section>
+      </article>
+      <article>
+        <section>
+          <embed src="picture.webp" type="image/webp" width="200" />
+          <br />
+          <br />
+          <embed src="video.webm" type="video/webm" width="200" />
+        </section>
+        <figure>
+          <img src="picture.webp" alt="A picture of a car" width="200" />
+          <figcaption>Beautiful image of car which sun shining</figcaption>
+        </figure>
+        <section>
+          <p>
+            please press <kbd>clt</kbd> <kbd>+</kbd> <kbd>C</kbd> to copy the
+            selected text
+          </p>
+          <div>
+            using meter tag &nbsp;
+            <meter value="2" min="0" max="10"></meter>
+          </div>
+          <br />
+          <br />
+          <div>
+            using progress tag &nbsp;
+            <progress value="2" min="0" max="10">value is 2 out of 10</progress>
+          </div>
+        </section>
+        <section>
+          <picture width="200" height="200">
+            <source media="(min-width:700px)" srcset="picturethree-min.webp" />
+            <source media="(min-width:500px)" srcset="pictureTwo-min.webp" />
+            <img src="picture.webp" alt="a car" />
+          </picture>
+        </section>
+        <div>
+          <p>
+            Here is how we can use ruby tag to move a text above on another text
+          </p>
+          <ruby>Hello <rt>World!</rt></ruby>
+        </div>
+        <br />
+        <a href="picture.webp" download="picture of a car"
+          >Download the picture</a
+        >
+        <br />
+        <br />
+        <details>
+          <summary>This is semantic tag</summary>
+          <p>
+            This is beneficial when we don't want to show the content until user
+            click on summery
+          </p>
+        </details>
+      </article>
+      <article>
+        <img
+          src="picture.webp"
+          alt="A simple car"
+          usemap="#map"
+          width="200"
+          height="200"
+        />
+        <map name="map">
+          <area
+            shape="rect"
+            coords="10 10 190 190"
+            href="#sectionOne"
+            alt="picture"
+          />
+        </map>
+      </article>
+      <article>
+        <div>
+          <p>here is how to comment an HTML Tag</p>
+          <!-- <span>This is commented</span> -->
+        </div>
+        <div>
+          <p>here is how to show source code using code and pre tag</p>
+          <pre>
+                
+                <code>
+                    const add =(a,b) => {
+                        return a+b;
+                    }
+                    add(1,5);
+                </code>
+            </pre>
+        </div>
+        <br />
+        <dialog open>
+          <p>Are you ok?</p>
+          <form method="dialog">
+            <button>Yes</button>
+          </form>
+        </dialog>
+        <div>
+          <template>
+            here is all the content that would not be displayed but will remain
+            in dom.
+          </template>
+        </div>
+        <p>
+          here is a use case of wbr tag.
+          <span
+            >abcdefghijkms<wbr />dijgojsodfijosl<wbr />aoisoifdsflijsdhgosodf</span
+          >
+        </p>
+        <bdi
+          >bdi tag use for format text from left or right according to
+          language</bdi
+        >
+        <blockquote>
+          <p>"Be free, be true, be you"</p>
+          <cite>- Samir</cite>
+        </blockquote>
+        <div>
+          <p>
+            here is use case of time tag. Time is
+            <time datetime="2024-06-15T19:00">7 PM</time> to go the school.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <small>&copy; copyright reserved 2024</small>
+    </footer>
+  </body>
+</html>
